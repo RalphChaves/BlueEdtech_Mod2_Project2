@@ -1,0 +1,28 @@
+{
+  "name": "blueedtech_mod2_project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RalphChaves/BlueEdtech_Mod2_Project2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RalphChaves/BlueEdtech_Mod2_Project2/issues"
+  },
+  "homepage": "https://github.com/RalphChaves/BlueEdtech_Mod2_Project2#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

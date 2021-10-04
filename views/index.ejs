@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <body>
+        <nav>
+            <img src="/img/pokebola-go.png" class="img-fluid gif" alt="Animação Pokebola">
+            
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="Cadastro">Cadastro</a>
+                </li>
+            </ul>
+        </nav>
+        <% if(message != "") {  %>
+            <section id="message">
+                <p><%= message %></p> <span id="close">&times;</span>
+            </section>
+        <% }  %>
+        <header>
+            <article>
+                <h1>Pokedex</h1>
+            </article>
+        </header>
+        <% pokedex.forEach((pokedex,index) => { %>
+
+        <section id="cursos">
+            <section class="card">
+
+                <article id="content">
+                      
+                    <ul>
+                            
+                        <li><h2>Nome: <%= pokedex.nome %></h2> </li>
+                        <li><h2>Tipo: <%= pokedex.tipo %></h2> </li>
+                        <a href="/detalhes/<%= index %>"><img src="<%= pokedex.imagem %>" width="100%" height="100%"></a>
+                      
+                    </ul>
+                </article>
+            </section>
+        </section>
+        <% }) %> 
+        <script src ="/js/script.js"></script>
+</body>
+</html>
